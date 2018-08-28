@@ -22,20 +22,11 @@
 							font-weight: normal;
 							font-style: normal;
 							font-size: 50px;
-					}
-				.footer-copyright
-					{
-						
-						background-color:#424242;
-					}
-									
-				.footer-copyright
-					{
-						background-color:#03a9f4;
-					}
+					}							
+				
 				.page-footer
 					{
-						background-color:##03a9f4;
+						background-color:blue;
 					}
 					.mdl-mega-footer 
 					{
@@ -86,7 +77,10 @@
 	margin-left:500px;
 
 	}
-
+	.mdl-navigation__link
+	{
+		font-size:18px;
+	}
 	#button1
     {	
 		background-color:#795548;
@@ -161,10 +155,10 @@
 		</ul>
 		  <div class="mdl-layout--large-screen-only mdl-layout__header-row mdl-color--blue" id="hello">
 		   
-			<a class="mdl-navigation__link" href="{{url_for('firstpage')}}">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<a class="dropdown-trigger mdl-navigation__link" href="#!" data-target="dropdown1">&nbsp;&nbsp;&nbsp; 
+			<a class="mdl-navigation__link" href="{{url_for('firstpage')}}">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
+			<a class="dropdown-trigger mdl-navigation__link" href="#!" data-target="dropdown1">
 			Unicode to Zawgyi<i class="material-icons">arrow_drop_down</i>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;</a></li>	
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>	
 						
 		</div>
 	</span> 
@@ -200,44 +194,47 @@
 	</div>
 	<br>
 		<footer class="mdl-mega-footer">
-			<div class="mdl-mega-footer--middle-section">
-							<div class="mdl-mega-footer--drop-down-section">
-								<input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-									<h1 class="mdl-mega-footer--heading">Features</h1>
-									<ul class="mdl-mega-footer--link-list">
-										<li><a href="{{url_for('about')}}">About</a></li>
-										<li><a href="#!">Terms</a></li>
-										<li><a href="#!">Partners</a></li>
-									</ul>
-							</div>
-							<div class="mdl-mega-footer--drop-down-section">
-								<input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-									<h1 class="mdl-mega-footer--heading">Details</h1>
-									<ul class="mdl-mega-footer--link-list">
-										<li><a href="#!">Tools</a></li>
-										<li><a href="#!">Resources</a></li>
-									</ul>
-							</div>
-							<div class="mdl-mega-footer--drop-down-section">
-								<input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-									<h1 class="mdl-mega-footer--heading">Technology</h1>
-									<ul class="mdl-mega-footer--link-list">
-										<li><a href="#!">How it works</a></li>
-										<li><a href="#!">Products</a></li>
-										<li><a href="#!">Contracts</a></li>
-									</ul>
-							</div>
-							<div class="mdl-mega-footer--drop-down-section">
-								<input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-									<h1 class="mdl-mega-footer--heading">FAQ</h1>
-									<ul class="mdl-mega-footer--link-list">
-										<li><a href="#!">Questions</a></li>
-										<li><a href="#!">Answers</a></li>
-										<li><a href="#!">Contact us</a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="footer-copyright">
+      <div class="mdl-mega-footer__middle-section">
+    
+        <div class="mdl-mega-footer__drop-down-section">
+          <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+          <h1 class="mdl-mega-footer__heading">Features</h1>
+          <ul class="mdl-mega-footer__link-list">
+            <li><a href="{{url_for('about')}}">About</a></li>
+              <li><a href="#">Contact us</a></li>
+          </ul>
+        </div>
+    
+        <div class="mdl-mega-footer__drop-down-section">
+          <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+          <h1 class="mdl-mega-footer__heading">Details</h1>
+          <ul class="mdl-mega-footer__link-list">
+            <li><a href="#">Resources</a></li>
+          </ul>
+        </div>
+    
+        <div class="mdl-mega-footer__drop-down-section">
+          <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+          <h1 class="mdl-mega-footer__heading">Technology</h1>
+          <ul class="mdl-mega-footer__link-list">
+            <li><a href="#">How it works</a></li>
+            
+          </ul>
+        </div>
+    
+        <div class="mdl-mega-footer__drop-down-section">
+          <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+          <h1 class="mdl-mega-footer__heading">FAQ</h1>
+          <ul class="mdl-mega-footer__link-list">
+            <li><a href="#">Questions</a></li>
+            <li><a href="#">Answers</a></li>
+          
+          </ul>
+        </div>
+    
+      </div>
+    
+     						<div class="footer-copyright">
 							<div class="container">
 								@ 2018 CUMDY Interns
 								<a class="grey-text text-lighten-4 right">Goe-Hope Team</a>

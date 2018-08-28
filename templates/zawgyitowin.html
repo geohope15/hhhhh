@@ -15,7 +15,7 @@
 			<script type="text/javascript" src="{{url_for('static', filename='JQuery/jquery.js')}}"></script>
 			<script type="text/javascript" src="{{url_for('static', filename='js/zgtowin.js')}}"></script>
 
-	        <style>
+	       <style>
 
 					@font-face {
 						font-family: 'win_innwaregular';
@@ -154,10 +154,10 @@
 		</ul>
 		  <div class="mdl-layout--large-screen-only mdl-layout__header-row mdl-color--blue" id="hello">
 		   
-			<a class="mdl-navigation__link" href="{{url_for('home')}}">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<a class="dropdown-trigger mdl-navigation__link" href="#!" data-target="dropdown1">&nbsp;&nbsp;&nbsp; 
+			<a class="mdl-navigation__link" href="{{url_for('firstpage')}}">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
+			<a class="dropdown-trigger mdl-navigation__link" href="#!" data-target="dropdown1">
 			Zawgyi to WinInnwa<i class="material-icons">arrow_drop_down</i>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;</a></li>	
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>	
 						
 		</div>
 	</span> 
@@ -166,67 +166,74 @@
 			<!-- Your content goes here--> 
 			<div class="mdl-layout__tab-panel is-active" id="overview">
 				<form action="#">
-				 <div class=" center row">
+				 <div class="row">
 					<div class="col s6">
 						<textarea id="myinput"></textarea>
-						<label for="myinput">Zawgyi</label>
-						<br>
+						<label style="margin-left:50%" for="myinput">Zawgyi</label>
+						<br><br>
+						<button style="margin-left: 66%" type="submit" class="waves-effect btn-small z-depth-0" id="button1">Convert</button>
+
 					</div>			
 					<div class="col s6">						
 						<textarea id="output"></textarea>
-						<label for="output">Unicode</label>
-						<br>
+						<label style="margin-left:50%" for="output">WinInnwa</label>
+						<br><br>
+						<button style="margin-left:15%" type="reset" class="waves-effect btn-small z-depth-0" id="button2">Clear</button>
 					</div>
 				</div>
-		<br><br><br>
-		
-		
-			<button type="submit" class="waves-effect btn-large z-depth-0" id="button2">Convert</button>
-		
-			<button type="reset" class="waves-effect btn-large z-depth-0" id="button1">Clear</button>
-				
+			<!-- <div class="center row">
+				<div class="center col s6">
+				</div>
+				<div class="center col s6">
+			
+				</div>
+			</div> -->
 		</form>			
 	<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp"></section>		
 	</div>
+	<br>
 		<footer class="mdl-mega-footer">
-			<div class="mdl-mega-footer--middle-section">
-							<div class="mdl-mega-footer--drop-down-section">
-								<input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-									<h1 class="mdl-mega-footer--heading">Features</h1>
-									<ul class="mdl-mega-footer--link-list">
-										<li><a href="{{url_for('about')}}">About</a></li>
-										<li><a href="#!">Terms</a></li>
-										<li><a href="#!">Partners</a></li>
-									</ul>
-							</div>
-							<div class="mdl-mega-footer--drop-down-section">
-								<input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-									<h1 class="mdl-mega-footer--heading">Details</h1>
-									<ul class="mdl-mega-footer--link-list">
-										<li><a href="#!">Tools</a></li>
-										<li><a href="#!">Resources</a></li>
-									</ul>
-							</div>
-							<div class="mdl-mega-footer--drop-down-section">
-								<input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-									<h1 class="mdl-mega-footer--heading">Technology</h1>
-									<ul class="mdl-mega-footer--link-list">
-										<li><a href="#!">How it works</a></li>
-										<li><a href="#!">Products</a></li>
-										<li><a href="#!">Contracts</a></li>
-									</ul>
-							</div>
-							<div class="mdl-mega-footer--drop-down-section">
-								<input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-									<h1 class="mdl-mega-footer--heading">FAQ</h1>
-									<ul class="mdl-mega-footer--link-list">
-										<li><a href="#!">Questions</a></li>
-										<li><a href="#!">Answers</a></li>
-										<li><a href="#!">Contact us</a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="footer-copyright">
+      <div class="mdl-mega-footer__middle-section">
+    
+        <div class="mdl-mega-footer__drop-down-section">
+          <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+          <h1 class="mdl-mega-footer__heading">Features</h1>
+          <ul class="mdl-mega-footer__link-list">
+            <li><a href="{{url_for('about')}}">About</a></li>
+              <li><a href="#">Contact us</a></li>
+          </ul>
+        </div>
+    
+        <div class="mdl-mega-footer__drop-down-section">
+          <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+          <h1 class="mdl-mega-footer__heading">Details</h1>
+          <ul class="mdl-mega-footer__link-list">
+            <li><a href="#">Resources</a></li>
+          </ul>
+        </div>
+    
+        <div class="mdl-mega-footer__drop-down-section">
+          <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+          <h1 class="mdl-mega-footer__heading">Technology</h1>
+          <ul class="mdl-mega-footer__link-list">
+            <li><a href="#">How it works</a></li>
+            
+          </ul>
+        </div>
+    
+        <div class="mdl-mega-footer__drop-down-section">
+          <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+          <h1 class="mdl-mega-footer__heading">FAQ</h1>
+          <ul class="mdl-mega-footer__link-list">
+            <li><a href="#">Questions</a></li>
+            <li><a href="#">Answers</a></li>
+          
+          </ul>
+        </div>
+    
+      </div>
+    
+     						<div class="footer-copyright">
 							<div class="container">
 								@ 2018 CUMDY Interns
 								<a class="grey-text text-lighten-4 right">Goe-Hope Team</a>
