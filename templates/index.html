@@ -1,40 +1,19 @@
-<!DOCTYPE html>
-
 <html>
-
-	<head>
-
-			<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-			<link rel="stylesheet" href='https://mmwebfonts.comquas.com/fonts/?font=zawgyi' />
-			<link rel="stylesheet" href='https://mmwebfonts.comquas.com/fonts/?font=myanmar3' />
-			<link type="text/css" rel="stylesheet" href="{{url_for('static', filename='css/materialize.min.css')}}"  media="screen,projection"/>
-			<link rel="stylesheet" href="{{url_for('static',filename='css/material.min.css')}}">
-			<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-			<script type="text/javascript" src="{{url_for('static', filename='JQuery/jquery.js')}}"></script>
-			<script type="text/javascript" src="{{url_for('static', filename='js/app.js')}}"></script>
-
-	        <style>
-					@font-face {
-						font-family: 'win_innwaregular';
-						src: url("{{url_for('static', filename='wininnwa-webfont.woff2')}}") format('woff2'),
-							url("{{url_for('static', filename='wininnwa-webfont.woff')}}") format('woff');
-							font-weight: normal;
-							font-style: normal;
-							font-size: 50px;
-					}							
-				
-				.page-footer
-					{
-						background-color:blue;
-					}
-					.mdl-mega-footer 
-					{
-					 padding:16px 40px;
-					 color:white;
-					 background-color:#2196f3;
-					}
-					.mdl-layout__title,.mdl-layout-title
+    <head>      
+		  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		  <link type="text/css" rel="stylesheet" href="{{url_for('static',filename='css/materialize.css')}}"  media="screen,projection"/>
+		  <link rel="stylesheet" href="{{url_for('static',filename='css/material.min.css')}}">
+		  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		  <script type="text/javascript" src="{{url_for('static',filename='JQuery/jquery.js')}}"></script>
+	<style>				
+			.demo-layout-transparent .mdl-layout__header,
+			.demo-layout-transparent .mdl-layout__drawer-button 
+				{
+					/* This background is dark, so we set text to white. Use 87% black instead if
+					your background is light. */
+					color: white;
+				}
+			mdl-layout__title,.mdl-layout-title
 				{
 					display:block;
 					position:relative;
@@ -44,103 +23,96 @@
 					color:white;
 					margin:0;
 				}
-			 .mdl-layout__header-row
+			
+			.mdl-layout__header-row
 				{
 					background-color:#2196f3;
 					padding:0 0 0 0;
 				}
 
-				.page-footer
+			#button2
+				{
+					margin-left:500px;
+					background-color:#795548;
+				}
+			#button1
+				{
+					margin-left:50px;
+					background-color:#795548;
+				}
+
+			body 
+				{
+					display: flex;
+					min-height: 100vh;
+					flex-direction: column;
+				}
+			main 
+				{
+					flex: 1 0 auto;
+				}
+			
+			.footer-copyright
+				{
+					background-color:#2196f3;;
+				}
+			.page-footer
+				{
+					background-color:#2196f3;
+				}
+				.mdl-mega-footer 
 					{
-						background-color:#616161;
+					 padding:16px 40px;
+					 color:white;
+					 background-color:#2196f3;
 					}
+			.mdl-layout__title,.mdl-layout-title
+				{
+					display:block;
+					position:relative;
+					font-family:"Roboto","Helvetica","Arial",sans-serif;
+					font-size:30px;line-height:1;letter-spacing:.02em;
+					font-weight:500;
+					box-sizing:border-box;
+					color:white;
+					margin:0;
+					padding: 0 0 0 0;
 
-				body
-					{
-						display: flex;
-						min-height: 100vh;
-						flex-direction: column;
-					}
-
-				main
-					{
-						flex: 1 0 auto;
-					}
-
-
-				nav{
-					background-color:#03a9f4;
-					}
-						.waves-effect
-	{
-	background-color:#795548;
-	margin-left:500px;
-
-	}
-	.mdl-navigation__link
-	{
-		font-size:18px;
-	}
-	#button1
-    {	
-		background-color:#795548;
-	}
-	#button2
-	{
-	background-color:#795548;
-	}
-
-
-	#myinput,#output
-
-	{
-
-    background-color:#e0f2f1 ;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
-	overflow:scroll;
-	padding: 20px;
-    border: 1px solid rgba(0,0,0,0.15);
-    -moz-box-shadow: 0px 0px 6px rgba(0,0,0,0.05);
-    -webkit-box-shadow: 0px 0px 6px rgba(0,0,0,0.05);
-    box-shadow: 0px 0px 6px rgba(0,0,0,0.05);
-	height:330px;
-	resize: vertical;
-	width:100%;
-	margin-top:20px;
-  }
-
-
-	</style>
-
+				}
+			.mdl-layout__header-row .mdl-navigation__link 
+				{
+				  display: block;
+				  color:white;
+				  line-height: 64px;
+				  padding: 0 0px;
+				  font-size:20px;
+				}
+	</style>		
     <script>
-
+	
 		$(document).ready(function()
 			{
-
+			
 			$(".dropdown-trigger").dropdown();
-
+			
 			});
-
     </script>
+	</head>
+	<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+    <!-- Uses a transparent header that draws on top of the layout's background -->
+		<div class="demo-layout-transparent mdl-layout mdl-js-layout"></div>
 
-
-</head>
-
-	<body>
-
-
-<div class="demo-layout-transparent mdl-layout mdl-js-layout"></div>	
 			<main class="mdl-layout__content">
-			<div class="mdl-layout__header-row mdl-layout--small-screen-only mdl-color--blue"> 
-              <span class="mdl-layout-title">Universal Font Converter</span> 
-            </div> 
+			<div class="mdl-layout__header-row mdl-layout--small-screen-only mdl-color--blue" id="title1"> 
+              <span class="mdl-layout-title" id="title1">Universal Font Converter</span> 
+          </div> 
+		  <a class="divider"></a>
+          <div class="mdl-layout__header-row"> 
               <span class="mdl-layout-title">
 			  
 		<ul id="dropdown1" class="dropdown-content">
 
-			<li><a href="{{url_for('index')}}">Unicode to Zawgyi</a></li>
+			<li><a href="{{url_for('unitozawgyi')}}">Unicode to Zawgyi</a></li>
 
 			<li><a href="{{url_for('zawgyitouni')}}">Zawgyi to Unicode</a></li>
 
@@ -153,88 +125,60 @@
 			<li><a href="{{url_for('zawgyitowin')}}">Zawgyi to WinInnwa</a></li>
 
 		</ul>
-		  <div class="mdl-layout--large-screen-only mdl-layout__header-row mdl-color--blue" id="hello">
-		   
-			<a class="mdl-navigation__link" href="{{url_for('home')}}">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
-			<a class="dropdown-trigger mdl-navigation__link" href="#!" data-target="dropdown1">
-			Unicode to Zawgyi<i class="material-icons">arrow_drop_down</i>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>	
+		   <div class="mdl-layout--large-screen-only mdl-layout__header-row mdl-color--blue" id="hello">
+				 		   <a class="mdl-navigation__link" href="{{url_for('home')}}">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<a class="dropdown-trigger mdl-navigation__link" href="#!" data-target="dropdown1">&nbsp;&nbsp;&nbsp; 
+							choose font <i class="material-icons">arrow_drop_down</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;</a></li>	
 						
-		</div>
-	</span> 
-         
-		<div class="page-content">			
-			<!-- Your content goes here--> 
-			<div class="mdl-layout__tab-panel is-active" id="overview">
-				<form action="#">
-				 <div class="row">
-					<div class="col s6">
-						<textarea id="myinput"></textarea>
-						<label style="margin-left:50%" for="myinput">Unicode</label>
-						<br><br>
-						<button style="margin-left: 66%" type="submit" class="waves-effect btn-small z-depth-0" id="button1">Convert</button>
-
-					</div>			
-					<div class="col s6">						
-						<textarea id="output"></textarea>
-						<label style="margin-left:50%" for="output">Zawgyi</label>
-						<br><br>
-						<button style="margin-left:15%" type="reset" class="waves-effect btn-small z-depth-0" id="button2">Clear</button>
-					</div>
 				</div>
-			<!-- <div class="center row">
-				<div class="center col s6">
-				</div>
-				<div class="center col s6">
-			
-				</div>
-			</div> -->
-		</form>			
-	<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp"></section>		
-	</div>
-	<br>
-		<footer class="mdl-mega-footer">
-      <div class="mdl-mega-footer__middle-section">
-    
-        <div class="mdl-mega-footer__drop-down-section">
-          <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-          <h1 class="mdl-mega-footer__heading">Features</h1>
-          <ul class="mdl-mega-footer__link-list">
-            <li><a href="{{url_for('about')}}">About</a></li>
-              <li><a href="#">Contact us</a></li>
-          </ul>
-        </div>
-    
-        <div class="mdl-mega-footer__drop-down-section">
-          <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-          <h1 class="mdl-mega-footer__heading">Details</h1>
-          <ul class="mdl-mega-footer__link-list">
-            <li><a href="#">Resources</a></li>
-          </ul>
-        </div>
-    
-        <div class="mdl-mega-footer__drop-down-section">
-          <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-          <h1 class="mdl-mega-footer__heading">Technology</h1>
-          <ul class="mdl-mega-footer__link-list">
-            <li><a href="#">How it works</a></li>
-            
-          </ul>
-        </div>
-    
-        <div class="mdl-mega-footer__drop-down-section">
-          <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-          <h1 class="mdl-mega-footer__heading">FAQ</h1>
-          <ul class="mdl-mega-footer__link-list">
-            <li><a href="#">Questions</a></li>
-            <li><a href="#">Answers</a></li>
-          
-          </ul>
-        </div>
-    
-      </div>
-    
-     						<div class="footer-copyright">
+			</span> 
+         </div> 
+				<div class="page-content"><!-- Your content goes here -->
+				
+					<img src="{{url_for('static',filename='images/cumdy.jpg')}}" width="100%" height="400px">	
+					
+					<footer class="mdl-mega-footer">
+						<div class="mdl-mega-footer--middle-section">
+							<div class="mdl-mega-footer--drop-down-section">
+								<input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+									<h1 class="mdl-mega-footer--heading">Features</h1>
+									<ul class="mdl-mega-footer--link-list">
+										<li><a href="{{url_for('about')}}">About</a></li>
+										<li><a href="#!">Terms</a></li>
+										
+									</ul>
+							</div>
+							<div class="mdl-mega-footer--drop-down-section">
+								<input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+									<h1 class="mdl-mega-footer--heading">Details</h1>
+									<ul class="mdl-mega-footer--link-list">
+										
+										<li><a href="#!">Tools</a></li>
+										<li><a href="#!">Resources</a></li>
+									</ul>
+							</div>
+							<div class="mdl-mega-footer--drop-down-section">
+								<input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+									<h1 class="mdl-mega-footer--heading">Technology</h1>
+									<ul class="mdl-mega-footer--link-list">
+										<li><a href="#!">How it works</a></li>
+										<li><a href="#!">Patterns</a></li>
+										
+										
+										<li><a href="#!">Contracts</a></li>
+									</ul>
+							</div>
+							<div class="mdl-mega-footer--drop-down-section">
+								<input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+									<h1 class="mdl-mega-footer--heading">FAQ</h1>
+									<ul class="mdl-mega-footer--link-list">
+										<li><a href="#!">Questions</a></li>
+										<li><a href="#!">Answers</a></li>
+										<li><a href="#!">Contact us</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="footer-copyright">
 							<div class="container">
 								@ 2018 CUMDY Interns
 								<a class="grey-text text-lighten-4 right">Goe-Hope Team</a>
@@ -247,3 +191,5 @@
 	<script type="text/javascript" src="{{url_for('static',filename='js/materialize.js')}}"></script>
 	</body>
 </html>
+
+

@@ -6,9 +6,9 @@ import Win_To_Uni
 import Uni_To_Win
 app = Flask(__name__)
 
-@app.route("/index")
-def index():
-    return render_template("index.html")
+@app.route("/unitozawgyi")
+def unitozawgyi():
+    return render_template("unitozawgyi.html")
 
 @app.route("/convert", methods=["POST"])
 def convert():
@@ -89,7 +89,7 @@ def convert5():
 
 @app.route("/")
 def home():
-    return render_template("firstpage.html")
+    return render_template("index.html")
 
 @app.route("/about")
 def about():
