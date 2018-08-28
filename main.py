@@ -87,7 +87,7 @@ def convert5():
         return jsonify({'output': output})
     return jsonify({'output': "Plz write or paste text in input textarea"})
 
-@app.route("/firstpages")
+@app.route("/")
 def home():
     return render_template("firstpage.html")
 
