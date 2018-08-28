@@ -7,13 +7,7 @@
 		  <script type="text/javascript" src="{{url_for('static',filename='JQuery/jquery.js')}}"></script>
 		 <link rel="stylesheet" href='https://mmwebfonts.comquas.com/fonts/?font=zawgyi' />
 			<link rel="stylesheet" href='https://mmwebfonts.comquas.com/fonts/?font=myanmar3' />
-      <style>
-	  .mdl-layout__header-row .mdl-navigation__link
-	  {
-	  display:block;color:#fff;
-	  line-height:64px;
-	  padding:0 8px;
-	  }
+      <style> 
           .page-footer 
            { 
              background-color: #a7ffeb; 
@@ -56,13 +50,30 @@
 				  padding: 0 0px;
 				  font-size:18px;
 				}
-</style> 
+				.mdl-layout__header-row .mdl-navigation__link
+	  {
+	  display:block;color:#fff;
+	  line-height:64px;
+	  padding:0 8px;
+	  }
+				
+.demo-card-square.mdl-card {
+  width: 320px;
+  height: 320px;
+}
+.demo-card-square > .mdl-card__title {
+  color: #fff;
+  background:
+    url('../assets/demos/dog.png') bottom right 15% no-repeat #46B6AC;
+}
+</style>
+
 
    </head> 
         <div class="demo-layout-transparent mdl-layout mdl-js-layout"></div>	
 			<main class="mdl-layout__content">
 			<div class="mdl-layout__header-row mdl-layout--small-screen-only mdl-color--blue"> 
-              <span class="mdl-layout-title">How It Work</span> 
+              <span class="mdl-layout-title">Resources</span> 
             </div> 
               <span class="mdl-layout-title">
 		
@@ -73,63 +84,115 @@
 		</div>
 	</span>
 	<div class="page-content">
-          <table class="highlight" border="" height="100%" width="100%"> 
-         <thead> 
-           <tr> 
-                <th width="15%">Team Roles</th> 
-                <th>Skills/Requirements</th> 
-               <th width="10%">Number</th> 
-               <th width="15%">Member Roles</th> 
-           </tr> 
-         </thead> 
- 
-       <tbody> 
-           <tr> 
-           <td>Team Lead</td> 
-             <td>General Passion for all the technologies invovled in creating software. Specific skill and expertise in at least one role is a requirement and is also responsible for monitoring, reporting and proper and timely project execution</td> 
-      <td>1</td> 
-             <td>Mg Aung Kyaw Khaing</td> 
-            </tr> 
-            <tr> 
-              <td>Lead Developer & DevOps</td> 
-              <td>Strongest programming and system administration skills in the group. Sometime the Team Lead can take this role if there is no one else to assign to</td> 
-              <td>1</td> 
-              <td>Mg Aung Kyaw Khaing</td> 
-            </tr> 
-            <tr> 
-              <td>UI/UX Lead</td> 
-              <td>Passtion for design and userability. Someone who can think like a normal user. In this program he/she must have skills in HTML/CSS/JS and must learn a few frameworks such as BootStrap, Material Design, Angular and so on. Use of graphics tools and mockup tools</td> 
-              <td>1</td> 
-              <td>Ma Thinzar Oo</td> 
-            </tr> 
-            <tr> 
-              <td>UI/UX Dev</td> 
-              <td>same as above</td> 
-             <td>1</td> 
-              <td>Ma Ei Ei Phyu</td> 
-            </tr> 
-            <tr> 
-              <td>Dev 1</td> 
-              <td>Good logical thinking skill. Confortable with writing and rewriting code and reading and learning from other devs code. Either dev one or two must write code for Unit Test as well</td> 
-              <td>1</td> 
-              <td>Ma Ei Ei Kyaw</td> 
-            </tr> 
-            <tr> 
-              <td>Dev 2</td> 
-              <td>Good logical thinking skill. Confortable with writing and rewriting code and reading and learning from other devs code.</td> 
-              <td>1</td> 
-              <td>Ma Theim Mwe Phu</td> 
-            </tr> 
-              <tr> 
-              <td>Test & Documentation</td> 
-              <td>Have clear and conciese writing skills. Understands the value of documention.</td> 
-              <td>1</td> 
-              <td>Ma Nandarlin</td> 
-            </tr> 
- 
- 
-          </tbody> 
-     </table> 
+         <div class="row">
+   <div class="col s3 m3">
+     <div class="card horizontal">
+         <img src="{{url_for('static',filename='images/github.jpg width="320" height="200" >
+    </div>
+    <div class="card-content">
+        <p><a href="https://github.com">view</a></p>
+        
+    </div>
+  </div>
+  	<div class="col s3 m3">
+     <div class="card horizontal">
+        <img src="{{url_for('static',filename='images/github')}}" width="320" height="200">
+     </div>
+     <div class="card-content">
+        <p><a href="https://heroku.com">view</a></p>
+       
+    </div>
+  </div>
+  <div class="col s3 m3">
+     <div class="card horizontal">
+        <img src="{{url_for('static',filename='images/github')}}" width="320" height="200" >
+     </div>
+     <div class="card-content">
+        <p><a href="">view</a></p>
+    </div>
+  </div>
+  <div class="col s3 m3">
+     <div class="card horizontal">
+        <img src="{{url_for('static',filename='images/github')}}" width="320" height="200" >
+    </div>
+    <div class="card-content">
+        <p><a href="">view</a></p>
+    </div>
+  </div>
+ </div>
+<div class="row">
+   <div class="col s3 m3">
+     <div class="card horizontal">
+         <img src="{{url_for('static',filename='images/github.jpg')}}" width="320" height="200" >
+    </div>
+    <div class="card-content">
+        <p><a href="https://github.com">view</a></p>
+        
+    </div>
+  </div>
+  	<div class="col s3 m3">
+     <div class="card horizontal">
+        <img src="{{url_for('static',filename='images/heroku.jpg')}}" width="320" height="200">
+     </div>
+     <div class="card-content">
+        <p><a href="https://heroku.com">view</a></p>
+       
+    </div>
+  </div>
+  <div class="col s3 m3">
+     <div class="card horizontal">
+        <img src="{{url_for('static',filename='images/notepad.jpg')}}" width="320" height="200" >
+     </div>
+     <div class="card-content">
+        <p><a href="">view</a></p>
+    </div>
+  </div>
+  <div class="col s3 m3">
+     <div class="card horizontal">
+        <img src="{{url_for('static',filename='images/gitlab.jpg')}}" width="320" height="200" >
+    </div>
+    <div class="card-content">
+        <p><a href="">view</a></p>
+    </div>
+  </div>
+ </div>
+<div class="row">
+   <div class="col s3 m3">
+     <div class="card horizontal">
+         <img src="{{url_for('static',filename='images/invision.jpg')}}" width="320" height="200" >
+    </div>
+    <div class="card-content">
+        <p><a href="https://github.com">view</a></p>
+        
+    </div>
+  </div>
+  	<div class="col s3 m3">
+     <div class="card horizontal">
+        <img src="{{url_for('static',filename='images/pycharm.jpg')}}" width="320" height="200">
+     </div>
+     <div class="card-content">
+        <p><a href="https://heroku.com">view</a></p>
+       
+    </div>
+  </div>
+  <div class="col s3 m3">
+     <div class="card horizontal">
+        <img src="{{url_for('static',filename='images/mdl.jpg')}}" width="320" height="200" >
+     </div>
+     <div class="card-content">
+        <p><a href="">view</a></p>
+    </div>
+  </div>
+  <div class="col s3 m3">
+     <div class="card horizontal">
+        <img src="{{url_for('static',filename='images/materilizecss.jpg')}}" width="320" height="200" >
+    </div>
+    <div class="card-content">
+        <p><a href="">view</a></p>
+    </div>
+  </div>
+ </div> 
+		  
 	</div>
        </main> 
  <script src="{{url_for('static',filename='js/material.min.js')}}" ></script>
@@ -137,5 +200,4 @@
         </div> 
    </body> 
         </html> 
-
 

@@ -10,6 +10,7 @@ app = Flask(__name__)
 def unitozawgyi():
     return render_template("unitozawgyi.html")
 
+
 @app.route("/convert", methods=["POST"])
 def convert():
     myinput = request.form['myinput']
@@ -94,6 +95,26 @@ def home():
 @app.route("/about")
 def about():
     return render_template("about.html")
+	
+@app.route("/howitwork")
+def howitwork():
+    return render_template("howitwork.html")
+	
+@app.route("/resources")
+def resources():
+    return render_template("resources.html")
+
+@app.route("/contact")
+def contact():
+    return render_template("contact.html")
+	
+@app.route("/question")
+def question():
+    return render_template("question.html")
+	
+@app.route("/answer")
+def answer():
+    return render_template("answer.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
