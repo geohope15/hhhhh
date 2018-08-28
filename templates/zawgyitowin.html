@@ -26,13 +26,13 @@
 							font-size: 50px;
 					}
 
-				
-				
+
+
 				.page-footer
 					{
 						background-color:blue;
 					}
-					.mdl-navigation__link 
+					.mdl-navigation__link
 				{
 				  display: block;
 				  color:white;
@@ -60,13 +60,13 @@
 						.waves-effect
 	{
 	background-color:#795548;
-	
+
 
 	}
 
 	#button2
     {
-		
+
 		background-color:#795548;
 	}
 	#button1
@@ -84,18 +84,18 @@
 	resize: vertical;
     -webkit-border-radius: 4px;
     border-radius: 4px;
-	overflow:scroll
+	overflow:scroll;
 	padding: 20px;
     border: 1px solid rgba(0,0,0,0.15);
     -moz-box-shadow: 0px 0px 6px rgba(0,0,0,0.05);
     -webkit-box-shadow: 0px 0px 6px rgba(0,0,0,0.05);
     box-shadow: 0px 0px 6px rgba(0,0,0,0.05);
-	height:330px;
+	height:360px;
 	resize: vertical;
 	width:100%;
-	margin-top:20px;
+	margin-top:35px;
   }
-  .mdl-mega-footer 
+  .mdl-mega-footer
 					{
 					 padding:16px 40px;
 					 color:white;
@@ -116,7 +116,14 @@
 					background-color:#2196f3;
 					padding:0 0 0 0;
 				}
-
+				.mdl-navigation__link
+								{
+								  display: block;
+								  color:white;
+								  line-height: 64px;
+								  padding: 0 0px;
+								  font-size:19px;
+								}
 
 
 	</style>
@@ -135,13 +142,13 @@
 
 </head>
 
-<div class="demo-layout-transparent mdl-layout mdl-js-layout"></div>	
+<div class="demo-layout-transparent mdl-layout mdl-js-layout"></div>
 			<main class="mdl-layout__content">
-			<div class="mdl-layout__header-row mdl-layout--small-screen-only mdl-color--blue"> 
-              <span class="mdl-layout-title">Universal Font Converter</span> 
-            </div> 
+			<div class="mdl-layout__header-row mdl-layout--small-screen-only mdl-color--blue">
+              <span class="mdl-layout-title">&nbsp;&nbsp;&nbsp;Universal Font Converter</span>
+            </div>
               <span class="mdl-layout-title">
-			  
+
 		<ul id="dropdown1" class="dropdown-content">
 
 			<li><a href="{{url_for('unitozawgyi')}}">Unicode to Zawgyi</a></li>
@@ -158,31 +165,29 @@
 
 		</ul>
 		  <div class="mdl-layout--large-screen-only mdl-layout__header-row mdl-color--blue" id="hello">
-		   
-			<a class="mdl-navigation__link" href="{{url_for('home')}}">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
-			<a class="dropdown-trigger mdl-navigation__link" href="#!" data-target="dropdown1">
-			Zawgyi to WinInnwa<i class="material-icons">arrow_drop_down</i>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>	
-						
+
+			<a class="mdl-navigation__link" href="{{url_for('home')}}">&nbsp;&nbsp;Home</a>&nbsp;&nbsp;
+			<a class="dropdown-trigger mdl-navigation__link" href="#!" data-target="dropdown1">Zawgyi to WinInnwa<i class="material-icons">arrow_drop_down</i></a></li>
+
 		</div>
-	</span> 
-         
-		<div class="page-content">			
-			<!-- Your content goes here--> 
+	</span>
+
+		<div class="page-content">
+			<!-- Your content goes here-->
 			<div class="mdl-layout__tab-panel is-active" id="overview">
 				<form action="#">
 				 <div class="row">
 					<div class="col s6">
 						<textarea id="myinput"></textarea>
 						<label style="margin-left:50%" for="myinput">Zawgyi</label>
-						<br><br>
+						<br><br><br>
 						<button style="margin-left: 66%" type="submit" class="waves-effect btn-small z-depth-0" id="button1">Convert</button>
 
-					</div>			
-					<div class="col s6">						
+					</div>
+					<div class="col s6">
 						<textarea id="output"></textarea>
 						<label style="margin-left:50%" for="output">WinInnwa</label>
-						<br><br>
+						<br><br><br>
 						<button style="margin-left:15%" type="reset" class="waves-effect btn-small z-depth-0" id="button2">Clear</button>
 					</div>
 				</div>
@@ -190,16 +195,16 @@
 				<div class="center col s6">
 				</div>
 				<div class="center col s6">
-			
+
 				</div>
 			</div> -->
-		</form>			
-	<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp"></section>		
+		</form>
+	<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp"></section>
 	</div>
 	<br>
 		<footer class="mdl-mega-footer">
       <div class="mdl-mega-footer__middle-section">
-    
+
         <div class="mdl-mega-footer__drop-down-section">
           <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
           <h1 class="mdl-mega-footer__heading">Features</h1>
@@ -208,7 +213,7 @@
               <li><a href="#">Contact us</a></li>
           </ul>
         </div>
-    
+
         <div class="mdl-mega-footer__drop-down-section">
           <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
           <h1 class="mdl-mega-footer__heading">Details</h1>
@@ -216,28 +221,28 @@
             <li><a href="#">Resources</a></li>
           </ul>
         </div>
-    
+
         <div class="mdl-mega-footer__drop-down-section">
           <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
           <h1 class="mdl-mega-footer__heading">Technology</h1>
           <ul class="mdl-mega-footer__link-list">
             <li><a href="#">How it works</a></li>
-            
+
           </ul>
         </div>
-    
+
         <div class="mdl-mega-footer__drop-down-section">
           <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
           <h1 class="mdl-mega-footer__heading">FAQ</h1>
           <ul class="mdl-mega-footer__link-list">
             <li><a href="#">Questions</a></li>
             <li><a href="#">Answers</a></li>
-          
+
           </ul>
         </div>
-    
+
       </div>
-    
+
      						<div class="footer-copyright">
 							<div class="container">
 								@ 2018 CUMDY Interns
