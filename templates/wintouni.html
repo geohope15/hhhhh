@@ -10,7 +10,7 @@
 			<link rel="stylesheet" href='https://mmwebfonts.comquas.com/fonts/?font=zawgyi' />
 			<link rel="stylesheet" href='https://mmwebfonts.comquas.com/fonts/?font=myanmar3' />
 			<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
+<link rel="stylesheet" href="{{url_for('static',filename='css/material.min.css')}}">
 			<script type="text/javascript" src="{{url_for('static',filename='JQuery/jquery.js')}}"></script>
 			<script type="text/javascript" src="{{url_for('static', filename='js/wintouni.js')}}"></script>
 
@@ -23,14 +23,15 @@
 							font-style: normal;
 							font-size: 50px;
 					}
+				
 				.footer-copyright
-				{
-					background-color:#2196f3;
-				}
-			.page-footer
-				{
-					background-color:#2196f3;
-				}
+					{
+						background-color:#03a9f4;
+					}
+				.page-footer
+					{
+						background-color:##03a9f4;
+					}
 					.mdl-mega-footer 
 					{
 					 padding:16px 40px;
@@ -148,9 +149,9 @@
 		</ul>
 		  <div class="mdl-layout--large-screen-only mdl-layout__header-row mdl-color--blue" id="hello">
 		   
-			<a class="mdl-navigation__link" href="{{url_for('home')}}">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a class="mdl-navigation__link" href="{{url_for('firstpage')}}">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			<a class="dropdown-trigger mdl-navigation__link" href="#!" data-target="dropdown1">&nbsp;&nbsp;&nbsp; 
-			Unicode to WinInnwa<i class="material-icons">arrow_drop_down</i>
+			WinInnwa to Unicode<i class="material-icons">arrow_drop_down</i>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;</a></li>	
 						
 		</div>
@@ -172,7 +173,7 @@
 						<br>
 					</div>
 				</div>
-		<br>
+		<br><br><br>
 		
 		
 			<button type="submit" class="waves-effect btn-large z-depth-0" id="button2">Convert</button>
@@ -182,10 +183,6 @@
 		</form>			
 	<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp"></section>		
 	</div>
-	<br>
-	<br>
-	<br>
-	<br>
 		<footer class="mdl-mega-footer">
 			<div class="mdl-mega-footer--middle-section">
 							<div class="mdl-mega-footer--drop-down-section">
@@ -233,7 +230,7 @@
 			</footer>
 		</div>
 	</main>
-	<script src="{{url_for('static',filename='js/material.min.js')}}"></script>
+	<script src="{{url_for('static',filename='js/material.min.js')}}" ></script>
 	<script type="text/javascript" src="{{url_for('static',filename='js/materialize.js')}}"></script>
 	</body>
 </html>

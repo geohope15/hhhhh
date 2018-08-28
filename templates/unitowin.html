@@ -5,26 +5,25 @@
 	<head>
 
 			<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+<link rel="stylesheet" href="{{url_for('static',filename='css/material.min.css')}}">
 			<link type="text/css" rel="stylesheet" href="{{url_for('static', filename='css/materialize.min.css')}}"  media="screen,projection"/>
 			<link rel="stylesheet" href='https://mmwebfonts.comquas.com/fonts/?font=zawgyi' />
 			<link rel="stylesheet" href='https://mmwebfonts.comquas.com/fonts/?font=myanmar3' />
 			<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
 			<script type="text/javascript" src="{{url_for('static', filename='JQuery/jquery.js')}}"></script>
-			<script type="text/javascript" src="{{url_for('static', filename='js/unitowin.js')}}"></script>
+			<script type="text/javascript" src="{{url_for('static', filename='js/wintozg.js')}}"></script>
 
 	        <style>
-							@font-face {
-								font-family: 'win_innwaregular';
-								src: url("{{url_for('static', filename='wininnwa-webfont.woff2')}}") format('woff2'),
-									url("{{url_for('static', filename='wininnwa-webfont.woff')}}") format('woff');
-									font-weight: normal;
-									font-style: normal;
-									font-size: 50px;
-							}
-
-
+					@font-face {
+						font-family: 'win_innwaregular';
+						src: url("{{url_for('static', filename='wininnwa-webfont.woff2')}}") format('woff2'),
+							url("{{url_for('static', filename='wininnwa-webfont.woff')}}") format('woff');
+							font-weight: normal;
+							font-style: normal;
+							font-size: 50px;
+					}
+				
 				.footer-copyright
 					{
 						background-color:#03a9f4;
@@ -40,6 +39,28 @@
 						min-height: 100vh;
 						flex-direction: column;
 					}
+					.mdl-mega-footer 
+					{
+					 padding:16px 40px;
+					 color:white;
+					 background-color:#2196f3;
+					}
+					mdl-layout__title,.mdl-layout-title
+				{
+					display:block;
+					position:relative;
+					font-family:"Roboto","Helvetica","Arial",sans-serif;
+					font-size:30px;line-height:1;letter-spacing:.02em;
+					font-weight:500;box-sizing:border-box;
+					color:white;
+					margin:0;
+				}
+			 .mdl-layout__header-row
+				{
+					background-color:#2196f3;
+					padding:0 0 0 0;
+				}
+
 
 				main
 					{
@@ -65,7 +86,6 @@
 	#button1
 	{
 	margin-left:40px;
-	background-color:#795548;
 	}
 
 
@@ -83,9 +103,10 @@
     -moz-box-shadow: 0px 0px 6px rgba(0,0,0,0.05);
     -webkit-box-shadow: 0px 0px 6px rgba(0,0,0,0.05);
     box-shadow: 0px 0px 6px rgba(0,0,0,0.05);
-	height:100%;
+	height:300px;
 	resize: vertical;
-	width:500px;
+	width:100%;
+	margin-top:60px;
   }
 
 
@@ -104,8 +125,8 @@
 
 
 </head>
-<body>
-<div class="demo-layout-transparent mdl-layout mdl-js-layout"></div>	
+
+	<div class="demo-layout-transparent mdl-layout mdl-js-layout"></div>	
 			<main class="mdl-layout__content">
 			<div class="mdl-layout__header-row mdl-layout--small-screen-only mdl-color--blue"> 
               <span class="mdl-layout-title">Universal Font Converter</span> 
@@ -129,7 +150,7 @@
 		</ul>
 		  <div class="mdl-layout--large-screen-only mdl-layout__header-row mdl-color--blue" id="hello">
 		   
-			<a class="mdl-navigation__link" href="{{url_for('home')}}">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a class="mdl-navigation__link" href="{{url_for('firstpage')}}">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			<a class="dropdown-trigger mdl-navigation__link" href="#!" data-target="dropdown1">&nbsp;&nbsp;&nbsp; 
 			Unicode to WinInnwa<i class="material-icons">arrow_drop_down</i>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;</a></li>	
@@ -142,12 +163,12 @@
 			<div class="mdl-layout__tab-panel is-active" id="overview">
 				<form action="#">
 				 <div class=" center row">
-					<div class="col s6">
+					<div class="center col s6">
 						<textarea id="myinput"></textarea>
 						<label for="myinput">Unicode</label>
 						<br>
 					</div>			
-					<div class="col s6">						
+					<div class="center col s6">						
 						<textarea id="output"></textarea>
 						<label for="output">WinInnwa</label>
 						<br>
