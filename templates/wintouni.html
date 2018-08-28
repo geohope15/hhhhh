@@ -5,7 +5,7 @@
 	<head>
 
 			<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+			 <link rel="stylesheet" href="{{url_for('static',filename='css/material.min.css')}}">
 			<link type="text/css" rel="stylesheet" href="{{url_for('static', filename='css/materialize.min.css')}}"  media="screen,projection"/>
 			<link rel="stylesheet" href='https://mmwebfonts.comquas.com/fonts/?font=zawgyi' />
 			<link rel="stylesheet" href='https://mmwebfonts.comquas.com/fonts/?font=myanmar3' />
@@ -24,13 +24,34 @@
 							font-size: 50px;
 					}
 				.footer-copyright
+				{
+					background-color:#2196f3;
+				}
+			.page-footer
+				{
+					background-color:#2196f3;
+				}
+					.mdl-mega-footer 
 					{
-						background-color:#424242;
+					 padding:16px 40px;
+					 color:white;
+					 background-color:#2196f3;
 					}
-				.page-footer
-					{
-						background-color:#616161;
-					}
+					mdl-layout__title,.mdl-layout-title
+				{
+					display:block;
+					position:relative;
+					font-family:"Roboto","Helvetica","Arial",sans-serif;
+					font-size:30px;line-height:1;letter-spacing:.02em;
+					font-weight:500;box-sizing:border-box;
+					color:white;
+					margin:0;
+				}
+			 .mdl-layout__header-row
+				{
+					background-color:#2196f3;
+					padding:0 0 0 0;
+				}
 
 				body
 					{
@@ -82,7 +103,8 @@
     box-shadow: 0px 0px 6px rgba(0,0,0,0.05);
 	height:300px;
 	resize: vertical;
-	width:500px;
+	width:100%;
+	margin-top:70px;
   }
 
 
