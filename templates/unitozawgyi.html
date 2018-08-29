@@ -138,29 +138,27 @@
             </div>
               <span class="mdl-layout-title">
 
-		<ul id="dropdown1" class="dropdown-content">
+		<div class="mdl-layout--large-screen-only mdl-layout__header-row mdl-color--blue" id="hello">
+		   <!-- Left aligned menu below button -->
+<ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
+    for="demo-menu-lower-left">
+  <li class="mdl-menu__item"><a href="{{url_for('unitozawgyi')}}">Unicode to Zawgyi</a></li>
+  <li class="mdl-menu__item mdl-menu__item--full-bleed-divider"><a href="{{url_for('zawgyitouni')}}">Zawgyi to Unicode</a></li>
+  <li class="mdl-menu__item"><a href="{{url_for('wintouni')}}">WinInnwa to Unicode</a></li>
+  <li class="mdl-menu__item"><a href="{{url_for('unitowin')}}">Unicode to WinInnwa</a></li>
+  <li class="mdl-menu__item"><a href="{{url_for('wintozawgyi')}}">WinInnwa to Zawgyi</a></li>
+  <li class="mdl-menu__item"><a href="{{url_for('zawgyitowin')}}">Zawgyi to WinInnwa</a></li>
+</ul>
 
-			<li><a href="{{url_for('unitozawgyi')}}">Unicode to Zawgyi</a></li>
-
-			<li><a href="{{url_for('zawgyitouni')}}">Zawgyi to Unicode</a></li>
-
-			<li><a href="{{url_for('wintouni')}}">WinInnwa to Unicode</a></li>
-
-			<li><a href="{{url_for('unitowin')}}">Unicode to WinInnwa</a></li>
-
-			<li><a href="{{url_for('wintozawgyi')}}">WinInnwa to Zawgyi</a></li>
-
-			<li><a href="{{url_for('zawgyitowin')}}">Zawgyi to WinInnwa</a></li>
-
-		</ul>
-		  <div class="mdl-layout--large-screen-only mdl-layout__header-row mdl-color--blue" id="hello">
-
-			<a class="mdl-navigation__link" href="{{url_for('home')}}">&nbsp;&nbsp;Home</a>&nbsp;&nbsp;
-			<a class="dropdown-trigger mdl-navigation__link" href="#!" data-target="dropdown1">
-			Unicode to Zawgyi<i class="material-icons">arrow_drop_down</i></a></li>
-
-		</div>
-	</span>
+	<a class="mdl-navigation__link" href="{{url_for('home')}}">Home</a>
+               <a class="dropdown-trigger mdl-navigation__link" href="#!" data-target="dropdown1">
+							Choose Fonts
+							<button id="demo-menu-lower-left"
+        class="mdl-button mdl-js-button mdl-button--icon">
+  <i class="material-icons">arrow_drop_down</i>
+</button>
+</div>
+</span>
 
 		<div class="page-content">
 			<!-- Your content goes here-->
