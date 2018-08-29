@@ -1,11 +1,45 @@
 <html>
     <head>
 		  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		  <link type="text/css" rel="stylesheet" href="{{url_for('static',filename='css/materialize.css')}}"  media="screen,projection"/>
+		  
 		  <link rel="stylesheet" href="{{url_for('static',filename='css/material.min.css')}}">
 		  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		  <script type="text/javascript" src="{{url_for('static',filename='JQuery/jquery.js')}}"></script>
+
+		  <script type="text/javascript">
+$(document).ready(function() {
+    var docHeight = $(window).height();
+    var footerHeight = $('#footer').height();
+    var footerTop = $('#footer').position().top + footerHeight;
+    if (footerTop < docHeight) {
+        $('#footer').css('margin-top', 10 + (docHeight - footerTop) + 'px');
+    }
+});
+</script>
 	<style>
+
+
+			html{
+  position:relative; 
+  min-height: 100%;
+}
+/*Normalize html and body elements,this style is just good to have*/
+html,body{
+  margin:0;
+  padding:0;
+}
+.pageContentWrapper{
+  margin-bottom:100px;/* Height of footer*/
+} 
+.footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height:150px;
+    background:blue;
+}			
+
 			.demo-layout-transparent .mdl-layout__header,
 			.demo-layout-transparent .mdl-layout__drawer-button
 				{
@@ -56,7 +90,7 @@
 				{
 					background-color:#2196f3;;
 				}
-			.page-footer
+			.footer
 				{
 					background-color:#2196f3;
 				}
@@ -137,7 +171,7 @@
 
 					<img src="{{url_for('static',filename='images/cumdy.jpg')}}" width="100%" height="500px">
 
-					<footer class="mdl-mega-footer">
+					<div class="footer">
 						<div class="mdl-mega-footer--middle-section">
 							<div class="mdl-mega-footer--drop-down-section">
 								<input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
@@ -183,10 +217,10 @@
 								<a class="grey-text text-lighten-4 right">Goe-Hope Team</a>
 							</div>
 						</div>
-			</footer>
+			</div>
 		</div>
 	</main>
 	<script src="{{url_for('static',filename='js/material.min.js')}}" ></script>
-	<script type="text/javascript" src="{{url_for('static',filename='js/materialize.js')}}"></script>
+
 	</body>
 </html>
